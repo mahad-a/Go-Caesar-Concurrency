@@ -34,11 +34,3 @@ func CaesarCipher(m string, shift int) string {
 	}
 	return strings.ToUpper(buffer.String()) // return string all uppercase
 }
-
-//func main() {
-//	fmt.Println(CaesarCipher("I love CS!", 5), "\nExpected: NQTAJHX")
-//	fmt.Println(CaesarCipher("Hello, World!", 3), "\nExpected: KHOORZRUOG")
-//	fmt.Println(CaesarCipher("ABC XYZ", 2), "\nExpected: CDEZAB")
-//	fmt.Println(CaesarCipher("Go Concurrency", 7), "\nExpected: NVJVTULYNLZAPJP")
-//	fmt.Println(CaesarCipher("SYSC3101!", 4), "\nExpected: WCMG")
-//}
