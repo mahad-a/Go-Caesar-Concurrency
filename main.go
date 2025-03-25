@@ -17,6 +17,10 @@ func runQuestion2() {
 	concurrent()
 }
 
+func runQuestion3() {
+	accelerateConcurrency()
+}
+
 func main() {
 	fmt.Println(strings.Repeat("-", 25))
 	fmt.Println("Question 1")
@@ -24,4 +28,7 @@ func main() {
 	fmt.Println(strings.Repeat("-", 25))
 	fmt.Println("Question 2")
 	runQuestion2()
+	fmt.Println(strings.Repeat("-", 25))
+	fmt.Println("Question 3")
+	runQuestion3()
 }
