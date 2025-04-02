@@ -11,11 +11,9 @@ Applies the Caesar Cipher cryptographic scheme to a list of strings
 */
 func CaesarCipherList(messages []string, shift int, channel chan string) {
 	for _, msg := range messages { // loop through the messages
-		encrypt_message := CaesarCipher(msg, shift) // encrypt using caesar cipher
-		channel <- encrypt_message                  // send the message to the channel
+		encryptMessage := CaesarCipher(msg, shift) // encrypt using caesar cipher
+		channel <- encryptMessage                  // send the message to the channel
 	}
-	// once all messages are sent, close the channel
-	close(channel)
 }
 
 /*
@@ -40,4 +38,6 @@ func concurrent() {
 		time.Sleep(time.Second) // synchronized
 	}
 
+	// once all messages are sent, close the channel
+	close(channel)
 }
