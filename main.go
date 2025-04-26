@@ -5,7 +5,7 @@ import (
 	"strings"
 )
 
-func runQuestion1() {
+func runPart1() {
 	fmt.Println(CaesarCipher("I love CS!", 5), "\nExpected: NQTAJHX")
 	fmt.Println(CaesarCipher("Hello, World!", 3), "\nExpected: KHOORZRUOG")
 	fmt.Println(CaesarCipher("ABC XYZ", 2), "\nExpected: CDEZAB")
@@ -13,22 +13,22 @@ func runQuestion1() {
 	fmt.Println(CaesarCipher("SYSC3101!", 4), "\nExpected: WCMG")
 }
 
-func runQuestion2() {
+func runPart2() {
 	concurrent()
 }
 
-func runQuestion3() {
+func runPart3() {
 	accelerateConcurrency()
 }
 
 func main() {
 	fmt.Println(strings.Repeat("-", 25))
-	fmt.Println("Question 1")
-	runQuestion1()
+	fmt.Println("Part 1")
+	runPart1()
 	fmt.Println(strings.Repeat("-", 25))
-	fmt.Println("Question 2")
-	runQuestion2()
+	fmt.Println("Part 2")
+	runPart2()
 	fmt.Println(strings.Repeat("-", 25))
-	fmt.Println("Question 3")
-	runQuestion3()
+	fmt.Println("Part 3")
+	runPart3()
 }
